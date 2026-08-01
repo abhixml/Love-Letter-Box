@@ -1,0 +1,1048 @@
+# Build a Romantic Long-Distance “Will You Be My Girlfriend?” Website
+
+Build a complete, polished, highly interactive romantic website that I can send to a girl I like. The website is a playful proposal asking her:
+
+**“Will you be my girlfriend?”**
+
+The relationship is **long-distance**, so the website should incorporate the idea that distance is annoying, but the connection still matters.
+
+The overall experience should be:
+
+* 45% cute
+* 30% funny / meme humour
+* 20% romantic
+* 5% emotional
+* Very personalized-feeling
+* Never corporate
+* Never generic AI-looking
+* Never overly cheesy
+* Mobile-first because she will probably open it on her phone
+
+The humour should feel like Reddit/internet humour: self-aware, absurd, slightly dramatic, cute, and relatable.
+
+Use **cute cat reaction memes / cat illustrations** throughout the website.
+
+---
+
+# TECH STACK
+
+Use:
+
+* React
+* Vite
+* JavaScript or TypeScript
+* Tailwind CSS
+* Framer Motion for animations
+* Lucide React for icons
+* Responsive design
+* Local state only unless absolutely necessary
+
+Do NOT build a backend unless needed.
+
+The website must work immediately with:
+
+```bash
+npm run dev
+```
+
+Make sure there are no broken imports, missing assets, or console errors.
+
+---
+
+# IMPORTANT DESIGN DIRECTION
+
+Do NOT make this look like a business website.
+
+It should feel like:
+
+> “Someone spent an unreasonable amount of time making an adorable website because they like this girl.”
+
+Use a romantic visual style:
+
+* soft pink
+* cream
+* white
+* subtle red
+* lavender
+* warm gradients
+* rounded cards
+* cute shadows
+* subtle glassmorphism
+* floating hearts
+* tiny stars
+* little cat illustrations
+* smooth transitions
+
+Avoid:
+
+* dark hacker aesthetic
+* excessive neon
+* corporate dashboards
+* huge amounts of text
+* cheesy stock photos
+* generic AI gradients
+* excessive animations that make the site annoying
+
+Use beautiful typography with one elegant serif/display font for romantic headings and a clean sans-serif font for body text.
+
+---
+
+# CAT ASSET STRATEGY
+
+Use cute cat images/illustrations throughout.
+
+If external image URLs are used, use reliable public image sources and make sure the website still looks good if an image fails.
+
+Prefer:
+
+* cute white cat
+* orange cat
+* crying cat
+* confused cat
+* shocked cat
+* happy cat
+* pleading cat
+* sleeping cat
+* two cats together
+
+Do not use copyrighted meme screenshots everywhere.
+
+Instead, create **meme-style cards** with cute cat images and funny captions.
+
+Example:
+
+CAT IMAGE
+
+> “me pretending I don't miss you”
+
+Another:
+
+CAT IMAGE
+
+> “me after you take 3 hours to reply”
+
+Another:
+
+CAT IMAGE
+
+> “geography personally attacking my love life”
+
+---
+
+# PAGE 1 — THE SUSPICIOUS WEBSITE
+
+Start with a clean, minimal screen.
+
+Small text:
+
+> ⚠️ IMPORTANT INTERNET BUSINESS ⚠️
+
+Large heading:
+
+> I made you a website.
+
+Under it:
+
+> Which is either incredibly cute
+> or a sign that I need adult supervision.
+
+Add a cute suspicious-looking cat.
+
+Caption:
+
+> “bro what did you build”
+
+Button:
+
+**Okay... what is this?**
+
+Button should have a smooth hover animation.
+
+When clicked:
+
+* button moves slightly
+* hearts appear
+* page transitions with Framer Motion
+
+---
+
+# PAGE 2 — OFFICIAL INVESTIGATION
+
+Heading:
+
+> ## THE OFFICIAL INVESTIGATION
+
+Text:
+
+> I have conducted extensive research.
+>
+> By “research”, I mean I overthought this for an unreasonable amount of time.
+
+Show a cute cat.
+
+Then create fake statistics:
+
+```text
+Thinking about you
+███████████████████ 97%
+
+Acting normal
+████ 12%
+
+Overthinking your messages
+████████████████████ 100%
+
+Being productive instead of thinking about you
+2%
+```
+
+Add a tiny label:
+
+> Scientific accuracy: questionable
+> Emotional accuracy: unfortunately very high
+
+Button:
+
+**Continue investigation →**
+
+---
+
+# PAGE 3 — THE EVIDENCE
+
+Heading:
+
+> ## I have gathered evidence.
+
+Create three animated cards.
+
+CARD 1:
+
+> **Evidence #01**
+>
+> I really like talking to you.
+
+Cute happy cat.
+
+CARD 2:
+
+> **Evidence #02**
+>
+> I think about you a suspicious amount.
+
+Cat staring into the distance.
+
+Caption:
+
+> “this is becoming a workplace safety issue”
+
+CARD 3:
+
+> **Evidence #03**
+>
+> You're far away.
+
+Show two locations:
+
+```text
+ME 🧍
+📍 ---------------------------- 📍
+                              YOU 🐈
+```
+
+Then:
+
+> And honestly...
+
+Huge text:
+
+> **GEOGRAPHY IS BEING VERY RUDE.**
+
+Add an angry cat.
+
+Caption:
+
+> “I would like to speak to the manager.”
+
+---
+
+# PAGE 4 — LONG DISTANCE SIMULATOR
+
+Create a funny interactive section.
+
+Heading:
+
+> ## LONG DISTANCE SIMULATOR™
+
+Subheading:
+
+> Let's calculate how annoying this distance is.
+
+Create a slider or fake distance meter.
+
+As the user interacts, show funny messages.
+
+Examples:
+
+0–20%:
+
+> “Okay this is manageable.”
+
+20–40%:
+
+> “Hmm. Slightly inconvenient.”
+
+40–60%:
+
+> “Who invented geography?”
+
+60–80%:
+
+> “I would like to file a complaint.”
+
+80–100%:
+
+> “THIS IS PERSONAL.”
+
+At 100% show a crying cat.
+
+Then:
+
+> Things I would do if you lived closer:
+
+Animated checklist:
+
+☑ Get food together
+☑ Annoy you in person
+☑ Steal your fries
+☑ Go on random walks
+☑ Sit together doing absolutely nothing
+☑ Annoy you again
+☑ Probably annoy you even more
+
+Then:
+
+> Unfortunately...
+
+Huge:
+
+**DISTANCE.EXE HAS CRASHED**
+
+---
+
+# PAGE 5 — FAKE SCIENTIFIC STUDY
+
+Heading:
+
+> ## I conducted a highly scientific study.
+
+Make it look like a ridiculous research paper.
+
+Table:
+
+```text
+Question                         Result
+
+Do I like you?                   yes
+
+Do I enjoy talking to you?      unfortunately yes
+
+Do I think you're cute?         very much yes
+
+Am I normal about this?         absolutely not
+
+Would I like you to be
+my girlfriend?                  ...
+```
+
+Then show:
+
+> Calculating courage...
+
+Animated loading bar:
+
+```text
+████████████████████████ 100%
+```
+
+Then:
+
+> **Courage.exe successfully launched**
+
+Cute cat wearing tiny glasses.
+
+Caption:
+
+> “peer-reviewed by the cat council”
+
+---
+
+# PAGE 6 — CAT COUNCIL
+
+Make this section very funny.
+
+Heading:
+
+> ## I consulted the cat council.
+
+Show 3–4 cat cards.
+
+CAT 1:
+
+> “say yes bro”
+
+CAT 2:
+
+> “he made an entire website”
+
+CAT 3:
+
+> “this man is COOKED”
+
+CAT 4:
+
+> “please stop overthinking and ask her already”
+
+Then:
+
+> After extensive consultation...
+
+A stamp animation:
+
+**APPROVED**
+
+Underneath:
+
+> The council has spoken.
+
+Button:
+
+**Okay, I'll ask her →**
+
+---
+
+# PAGE 7 — THE ROMANTIC SWITCH
+
+This is the most important transition.
+
+When the button is clicked:
+
+* all meme elements slowly fade
+* background becomes softer
+* music does NOT autoplay
+* animations become slower
+* floating tiny hearts
+* subtle stars
+* no loud effects
+
+Show:
+
+> Okay.
+>
+> No more jokes for a second.
+
+Then:
+
+> I genuinely really like you.
+
+Then:
+
+> I like talking to you.
+>
+> I like having you in my life.
+>
+> And even though there are kilometres between us, somehow you've become someone I really look forward to hearing from.
+
+Then:
+
+> I don't know exactly what the future looks like.
+>
+> But I'd really like to find out.
+>
+> With you.
+
+Pause.
+
+Then:
+
+# So...
+
+## Will you be my girlfriend? ❤️
+
+Under it:
+
+> — from someone who has clearly spent too much time making this website
+
+---
+
+# PAGE 8 — THE BUTTONS
+
+Show two large buttons.
+
+Primary:
+
+**YES ❤️**
+
+Secondary:
+
+**NO 🥺**
+
+Also provide a smaller third option:
+
+**I NEED SOME TIME**
+
+IMPORTANT:
+
+Do NOT actually trap her into saying yes.
+
+The “NO” interaction should be playful and cute, not coercive.
+
+The purpose is to create a funny “please reconsider” sequence while still respecting her choice.
+
+---
+
+# NO BUTTON BEHAVIOUR
+
+When she first clicks NO:
+
+Do NOT immediately accept it.
+
+Instead show a cute modal.
+
+Cute crying cat.
+
+Text:
+
+> WAIT.
+
+Then:
+
+> Are you sure? 🥺
+
+Small text:
+
+> The cat council was not emotionally prepared for this outcome.
+
+Buttons:
+
+**I WANT TO THINK ABOUT IT**
+
+and
+
+**Let me reconsider 😭**
+
+Do NOT make the modal impossible to close.
+
+If she selects “I WANT TO THINK ABOUT IT”:
+
+Show:
+
+> Of course. ❤️
+>
+> Take your time.
+>
+> No pressure.
+
+Then show a button:
+
+**Close this very dramatic website**
+
+This must be a legitimate exit.
+
+---
+
+# IF SHE CLICKS NO AGAIN
+
+Show a different cute cat.
+
+Text:
+
+> **THE CAT IS SAD.**
+
+Then:
+
+> He has reviewed your decision.
+
+Cat image.
+
+> His professional opinion:
+
+Huge:
+
+> “🥺”
+
+Then:
+
+> Okay okay, I'm not going to emotionally blackmail you.
+
+Then:
+
+> But before you go...
+
+Button:
+
+**One last consideration?**
+
+If clicked:
+
+Show a short list:
+
+> ☑ I like you
+> ☑ You make me happy
+> ☑ I would like to know you better
+> ☑ I promise to send you stupid memes
+> ☑ I will continue blaming geography
+> ☑ There will probably be cats
+
+Then:
+
+**Maybe YES? ❤️**
+
+Again, include:
+
+**No, I really mean no**
+
+If she clicks that:
+
+Show:
+
+> Okay. ❤️
+>
+> Thank you for being honest.
+>
+> The cat council will recover eventually.
+
+Show sleeping cat.
+
+This is important: the website must respect her answer.
+
+---
+
+# YES BUTTON
+
+When she clicks YES:
+
+DO NOT immediately show the final page.
+
+First create a dramatic loading screen:
+
+> WAIT.
+
+Then:
+
+> Did you actually just say YES?
+
+Animated loading bar.
+
+```text
+Verifying...
+███████████████░░░ 87%
+```
+
+Then:
+
+> Checking if this is a typo...
+
+```text
+██████████████████ 100%
+```
+
+Then:
+
+# OH MY GOD.
+
+Cat screaming happily.
+
+Confetti.
+
+Floating hearts.
+
+Small cats falling from the top of the screen.
+
+Text:
+
+> **SHE SAID YES.**
+
+Then:
+
+> I genuinely wasn't prepared for this.
+
+---
+
+# YES PAGE — FUNNY STATISTICS
+
+Show:
+
+```text
+Relationship Status
+
+Before:
+single + emotionally confused
+
+After:
+still emotionally confused
+but now with a girlfriend ❤️
+```
+
+Then:
+
+> Distance: annoying
+> Geography: enemy
+> Cat council: victorious
+> Me: extremely happy
+
+---
+
+# PAGE 9 — OFFICIAL GIRLFRIEND CERTIFICATE
+
+Create a cute fake certificate.
+
+Heading:
+
+> ## OFFICIAL CERTIFICATION
+
+Text:
+
+> This website officially certifies that
+
+Large placeholder:
+
+**[HER NAME]**
+
+has successfully agreed to become
+
+# MY GIRLFRIEND ❤️
+
+Date:
+
+**[DATE]**
+
+Small disclaimer:
+
+> Certificate approved by the International Cat Council.
+
+Add cute cat stamp.
+
+Button:
+
+**Save our certificate**
+
+Use browser print/download functionality if practical.
+
+---
+
+# PAGE 10 — FIRST LONG-DISTANCE DATE
+
+Now make it interactive.
+
+Heading:
+
+> ## Okay, girlfriend...
+
+Subheading:
+
+> Important question.
+
+# What should our first official date be?
+
+Create cards:
+
+### 🍿 Movie Date
+
+> We watch something together and pretend we aren't both checking the other person's reaction.
+
+### 🎮 Game Date
+
+> Competitive behaviour may occur.
+
+### 📞 Call Date
+
+> Talk for approximately 17 hours.
+
+### 🍕 Food Date
+
+> We both order food and pretend we're eating together.
+
+### 🌙 Late Night Talk
+
+> The classic “one more thing before we sleep” that lasts 3 hours.
+
+### 🐈 Cat Date
+
+> We exchange cat memes until one of us collapses.
+
+When she selects one, animate the card and show:
+
+> **Excellent choice.**
+>
+> Date #001 has officially entered the queue.
+
+---
+
+# PAGE 11 — LONG DISTANCE PROMISE
+
+Make this genuinely romantic but short.
+
+Darken the background slightly.
+
+Stars.
+
+Two tiny glowing points separated by a dotted line.
+
+Text:
+
+> You might be far away.
+>
+> But you're not far from my thoughts.
+>
+> Until we can actually sit next to each other,
+> I'll happily keep crossing the distance
+> one call,
+> one conversation,
+> one stupid meme,
+> and one goodnight at a time.
+
+Then:
+
+# Distance doesn't stand a chance. ❤️
+
+---
+
+# FINAL PAGE
+
+Show two cute cats sitting apart.
+
+Animation slowly moves them closer together.
+
+Text:
+
+> One day...
+
+Then:
+
+> `📍 ME ---------------- YOU 📍`
+
+The line gradually becomes:
+
+> `📍 ME ---- YOU 📍`
+
+Then:
+
+> `📍 US 📍`
+
+Final message:
+
+# Goodnight, girlfriend. ❤️
+
+Small text:
+
+> Now go before I make another website.
+
+Button:
+
+**Restart this ridiculous experience ↻**
+
+---
+
+# INTERACTION DETAILS
+
+Add:
+
+* smooth page transitions
+* fade-ins
+* slide-up animations
+* tiny floating hearts
+* cat reactions
+* button hover effects
+* gentle confetti on YES
+* typewriter effect only in selected places
+* loading bars
+* fake system errors
+* playful modals
+* subtle cursor effects on desktop
+* touch-friendly interactions on mobile
+
+Do not overdo animations.
+
+The website should feel polished rather than chaotic.
+
+---
+
+# MOBILE DESIGN
+
+This is extremely important.
+
+Optimize for:
+
+* iPhone
+* Android
+* 360px–430px widths
+
+Buttons must be large enough to tap.
+
+No horizontal scrolling.
+
+No tiny text.
+
+No hover-only functionality.
+
+Use responsive typography.
+
+The website should feel even better on mobile than desktop.
+
+---
+
+# PERSONALIZATION
+
+At the top of the source code, create a simple configuration object:
+
+```js
+const CONFIG = {
+  herName: "HER_NAME",
+  myName: "MY_NAME",
+  date: "DATE",
+  nickname: "NICKNAME",
+};
+```
+
+Use these values throughout the website.
+
+Make it easy for me to change her name, my name, nickname, and date without searching through the entire project.
+
+---
+
+# MUSIC
+
+Do NOT autoplay music.
+
+Create a small music button:
+
+**♪ Play our song**
+
+Only play audio after she explicitly clicks it.
+
+If no song is configured, hide the button.
+
+---
+
+# MEME CONTENT
+
+Do not fill every section with generic romantic quotes.
+
+Use short internet-style jokes such as:
+
+> “geography is my opp”
+
+> “me pretending I'm normal”
+
+> “bro is cooked”
+
+> “the cat council has been consulted”
+
+> “this is becoming a workplace safety issue”
+
+> “I would like to speak to the manager”
+
+> “DISTANCE.EXE HAS CRASHED”
+
+> “me after waiting 7 minutes for your reply”
+
+> “me when the call ends”
+
+> “me trying not to smile at my phone”
+
+Keep the humour cute rather than offensive.
+
+---
+
+# IMPORTANT ROMANTIC RULE
+
+The website should ultimately feel like a genuine confession.
+
+The memes are there to make the experience less awkward.
+
+The final question must be simple:
+
+# Will you be my girlfriend? ❤️
+
+Do not bury the actual question under 20 paragraphs.
+
+---
+
+# ACCESSIBILITY
+
+Include:
+
+* readable contrast
+* semantic HTML
+* keyboard navigation
+* visible focus states
+* alt text for images
+* reduced-motion support where practical
+* buttons instead of clickable divs
+* no essential information conveyed only through colour
+
+---
+
+# CODE QUALITY
+
+Organize the project cleanly.
+
+Suggested structure:
+
+```text
+src/
+  components/
+    CatMeme.jsx
+    HeartAnimation.jsx
+    PageTransition.jsx
+    ProgressBar.jsx
+    CuteButton.jsx
+    DecisionModal.jsx
+    DateCard.jsx
+
+  pages/
+    Landing.jsx
+    Investigation.jsx
+    Evidence.jsx
+    LongDistance.jsx
+    ScientificStudy.jsx
+    CatCouncil.jsx
+    Confession.jsx
+    Decision.jsx
+    Yes.jsx
+    Certificate.jsx
+    DatePlanner.jsx
+    Final.jsx
+
+  data/
+    config.js
+    memes.js
+
+  App.jsx
+  main.jsx
+  index.css
+```
+
+Use reusable components instead of putting everything into one massive component.
+
+---
+
+# FINAL REQUIREMENT
+
+After building the website:
+
+1. Run it.
+2. Check all routes/pages.
+3. Check mobile responsiveness.
+4. Check all buttons.
+5. Check YES flow.
+6. Check NO flow.
+7. Check “I need time” flow.
+8. Check that no button is impossible to click.
+9. Check that images don't break the layout.
+10. Fix all console errors.
+11. Make the final result feel like a **real romantic interactive experience**, not a generic landing page.
+
+Do not just create a mockup.
+
+**Actually implement the complete working website.**

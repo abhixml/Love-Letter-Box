@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Will You Be My Girlfriend?"
+description = "A romantic, meme-filled interactive proposal website with 11+ animated pages. Asks 'Will you be my girlfriend?' with cat memes, funny statistics, a long-distance simulator, a romantic confession, and a YES/NO flow — all mobile-first with Framer Motion animations."
+version = "1.0.0"
+id = "artifacts/girlfriend-proposal"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21259
+
+[services.development]
+run = "pnpm --filter @workspace/girlfriend-proposal run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/girlfriend-proposal", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/girlfriend-proposal/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21259"
+BASE_PATH = "/"
