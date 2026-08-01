@@ -1,35 +1,32 @@
 import React from 'react';
-import { motion, HTMLMotionProps } from 'framer-motion';
+import { motion } from 'framer-motion';
 
-interface CuteButtonProps extends HTMLMotionProps<"button"> {
-  children: React.ReactNode;
+interface CuteButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'ghost';
-  fullWidth?: boolean;
+  children: React.ReactNode;
 }
 
-export function CuteButton({ 
-  children, 
-  variant = 'primary', 
-  fullWidth = false, 
-  className = "", 
-  ...props 
-}: CuteButtonProps) {
-  const baseClasses = "relative font-medium transition-all duration-300 ease-out flex items-center justify-center outline-none focus-visible:ring-2 focus-visible:ring-ring active:scale-[0.98]";
-  
-  const variants = {
-    primary: "bg-primary text-primary-foreground rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-0.5 px-6 py-3 border border-transparent",
-    secondary: "bg-secondary text-secondary-foreground rounded-2xl hover:bg-secondary/80 px-6 py-3 border border-secondary-border shadow-sm",
-    ghost: "bg-transparent text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded-xl px-4 py-2",
-  };
-  
-  return (
-    <motion.button
-      whileHover={{ scale: variant === 'ghost' ? 1.02 : 1.03 }}
-      whileTap={{ scale: 0.98 }}
-      className={`${baseClasses} ${variants[variant]} ${fullWidth ? 'w-full' : ''} ${className}`}
-      {...props}
-    >
-      {children}
-    </motion.button>
-  );
-}
+export const CuteButton = React.forwardRef<HTMLButtonElement, CuteButtonProps>(
+  ({ variant = 'primary', children, className = '', ...props }, ref) => {
+    const baseStyle = "px-6 py-3 rounded-full font-medium transition-all focus:outline-none flex items-center justify-center gap-2 max-w-full text-center";
+    
+    const variants = {
+      primary: "bg-primary text-white shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 active:scale-95",
+      secondary: "bg-accent/20 text-accent-foreground hover:bg-accent/30 active:scale-95",
+      ghost: "bg-transparent text-muted-foreground hover:text-foreground hover:bg-black/5 active:scale-95"
+    };
+
+    return (
+      <motion.button
+        ref={ref}
+        whileHover={{ scale: 1.02 }}
+        whileTap={{ scale: 0.98 }}
+        className={`${baseStyle} ${variants[variant]} ${className}`}
+        {...(props as any)}
+      >
+        {children}
+      </motion.button>
+    );
+  }
+);
+CuteButton.displayName = 'CuteButton';

@@ -1,44 +1,52 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 
 interface ProgressBarProps {
   label: string;
-  targetPercent: number;
-  delay?: number;
+  percentage: number;
+  caption?: string;
+  isCustomFill?: React.ReactNode;
 }
 
-export function ProgressBar({ label, targetPercent, delay = 0 }: ProgressBarProps) {
-  const [percent, setPercent] = useState(0);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setPercent(targetPercent);
-    }, delay * 1000 + 500); // Wait for delay + entrance animation
-    
-    return () => clearTimeout(timer);
-  }, [targetPercent, delay]);
-
+export function ProgressBar({ label, percentage, caption, isCustomFill }: ProgressBarProps) {
   return (
-    <motion.div 
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay }}
-      className="w-full mb-4"
-    >
-      <div className="flex justify-between text-sm mb-1.5 font-medium text-foreground">
-        <span>{label}</span>
-        <span className="font-mono">{percent}%</span>
+    <div className="mb-6 w-full">
+      <div className="flex justify-between items-end mb-2">
+        <span className="font-semibold text-sm text-foreground">{label}</span>
+        {caption && <span className="text-xs text-muted-foreground italic">{caption}</span>}
       </div>
-      <div className="h-3 w-full bg-muted rounded-full overflow-hidden">
-        <motion.div 
-          className="h-full bg-primary rounded-full relative"
-          initial={{ width: "0%" }}
-          animate={{ width: `${percent}%` }}
-          transition={{ duration: 1.5, ease: "easeOut" }}
-        >
-          <div className="absolute inset-0 bg-white/20 w-full h-full transform skew-x-[-20deg] translate-x-[-100%] animate-[shimmer_2s_infinite]" />
-        </motion.div>
+      <div className="h-4 bg-black/5 rounded-full overflow-hidden relative w-full">
+        {isCustomFill ? (
+          <motion.div 
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="absolute inset-y-0 left-0 flex items-center px-1 text-sm tracking-widest"
+          >
+            {isCustomFill}
+          </motion.div>
+        ) : (
+          <motion.div
+            className="h-full bg-primary rounded-full relative"
+            initial={{ width: 0 }}
+            whileInView={{ width: `${Math.min(percentage, 100)}%` }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
+            {percentage > 100 && (
+              <motion.div 
+                initial={{ opacity: 0 }} 
+                whileInView={{ opacity: 1 }} 
+                transition={{ delay: 1 }}
+                className="absolute -right-4 top-0 bottom-0 flex items-center text-xs"
+              >
+                🔥
+              </motion.div>
+            )}
+          </motion.div>
+        )}
       </div>
-    </motion.div>
+    </div>
   );
 }

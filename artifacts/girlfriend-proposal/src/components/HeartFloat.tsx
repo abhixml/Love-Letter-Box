@@ -1,49 +1,33 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 
-interface Heart {
-  id: number;
-  x: number;
-  size: number;
-  duration: number;
-  delay: number;
-}
-
 export function HeartFloat() {
-  const [hearts, setHearts] = useState<Heart[]>([]);
-
-  useEffect(() => {
-    // Generate hearts
-    const newHearts = Array.from({ length: 20 }).map((_, i) => ({
-      id: i,
-      x: Math.random() * 100, // percentage
-      size: Math.random() * 20 + 10, // 10px to 30px
-      duration: Math.random() * 10 + 10, // 10s to 20s
-      delay: Math.random() * 10,
-    }));
-    setHearts(newHearts);
-  }, []);
+  const hearts = Array.from({ length: 15 }).map((_, i) => ({
+    id: i,
+    x: Math.random() * 100,
+    delay: Math.random() * 5,
+    duration: 3 + Math.random() * 4,
+    size: 10 + Math.random() * 20
+  }));
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
-      {hearts.map(heart => (
+    <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
+      {hearts.map(h => (
         <motion.div
-          key={heart.id}
+          key={h.id}
           className="absolute bottom-[-50px] text-primary/30"
-          initial={{ x: `${heart.x}vw`, y: 0, opacity: 0, rotate: 0 }}
-          animate={{
-            y: '-110vh',
+          initial={{ x: `${h.x}vw`, y: 100, opacity: 0, scale: h.size / 20 }}
+          animate={{ 
+            y: '-110vh', 
             opacity: [0, 1, 1, 0],
-            rotate: [0, -10, 10, -10, 0],
-            x: [`${heart.x}vw`, `${heart.x - 2}vw`, `${heart.x + 2}vw`, `${heart.x}vw`],
+            x: [`${h.x}vw`, `${h.x + (Math.random() * 10 - 5)}vw`]
           }}
-          transition={{
-            duration: heart.duration,
-            delay: heart.delay,
-            repeat: Infinity,
-            ease: "linear",
+          transition={{ 
+            duration: h.duration, 
+            repeat: Infinity, 
+            delay: h.delay,
+            ease: "linear" 
           }}
-          style={{ fontSize: heart.size }}
         >
           ❤️
         </motion.div>
