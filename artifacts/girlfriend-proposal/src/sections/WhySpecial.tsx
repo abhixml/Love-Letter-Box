@@ -5,10 +5,6 @@ import { CuteButton } from '../components/CuteButton';
 export function WhySpecial({ onNext }: { onNext: () => void }) {
   const cards = [
     {
-      icon: "🐧",
-      text: "You like penguins. That's genuinely one of the best personality traits a person can have."
-    },
-    {
       icon: "💬",
       text: "The way you yap? I could listen forever. Talking to you doesn't feel like talking. It feels like home."
     },
